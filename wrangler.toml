@@ -1,0 +1,11 @@
+name = "cloudflare-ai-chatbot"
+main = "src/index.js"
+compatibility_date = "2026-08-01"
+
+[ai]
+binding = "AI"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "chatbot_db"
+database_id = "<YOUR_D1_DATABASE_ID>"
