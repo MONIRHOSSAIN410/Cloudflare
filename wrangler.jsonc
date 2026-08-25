@@ -1,0 +1,25 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "cf-ai-chatbot-api",
+	"main": "src/index.js",
+	"compatibility_date": "2026-01-01",
+	"ai": {
+		"binding": "AI"
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "chatbot-db",
+			"database_id": "YOUR_D1_DATABASE_ID"
+		},
+		{
+			"binding": "chatbot",
+			"database_name": "chatbot_db",
+			"database_id": "644f699e-83e4-4e90-a491-bf8d27670818",
+			"remote": true
+		}
+	],
+	"observability": {
+		"enabled": true
+	}
+}
